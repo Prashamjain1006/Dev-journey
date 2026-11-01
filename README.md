@@ -1,4 +1,4 @@
 # Dev-journey
 My WebDev Journey starts 
 <br>
-Editor : Prasham Jain
+Editor : Prasham Jain (Student)
