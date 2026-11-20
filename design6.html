@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Order Summary</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Centers the card on the page */
+    body {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;   /* horizontal */
+      align-items: center;       /* vertical */
+      background: #b3d4cf;
+      font-family: "Times New Roman", serif;
+    }
+
+    .card {
+      width: 300px;
+      background: #f4f4f4;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+      text-align: center;
+      padding-bottom: 24px;
+    }
+
+    .card img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+      display: block;
+      background: linear-gradient(135deg, #0b1130, #1c3b57);
+    }
+
+    .card h2 {
+      margin-top: 28px;
+      font-size: 18px;
+    }
+
+    .card p.desc {
+      margin: 14px 24px 0;
+      font-size: 13px;
+      font-weight: bold;
+      line-height: 1.4;
+    }
+
+    /* Plan box: icon + text on the left, "Change" link on the right */
+    .plan {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 24px 16px 0;
+      padding: 10px 14px;
+      background: #cfe0e6;
+      border-radius: 8px;
+      text-align: left;
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+    }
+
+    .plan .info {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .plan .icon {
+      width: 34px;
+      height: 34px;
+      border-radius: 8px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 18px;
+    }
+
+    .plan a {
+      color: #1a0dab;
+      text-decoration: underline;
+      font-weight: 600;
+    }
+
+    .btn-pay {
+      display: block;
+      width: calc(100% - 48px);
+      margin: 22px auto 0;
+      padding: 14px 0;
+      border: none;
+      border-radius: 6px;
+      background: linear-gradient(#0b1b4d, #050c26);
+      color: #fff;
+      font-size: 13px;
+      cursor: pointer;
+      box-shadow: 0 12px 14px -6px rgba(0, 0, 0, 0.4);
+    }
+
+    .cancel {
+      display: block;
+      margin-top: 22px;
+      font-size: 14px;
+      font-weight: bold;
+      color: #222;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <img src="your-image.jpg" alt="Order illustration" />
+
+    <h2>Order Summary</h2>
+
+    <p class="desc">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+      Praesentium alias totam mollitia omnis pariatur rem sunt hic suscipit!
+    </p>
+
+    <div class="plan">
+      <div class="info">
+        <div class="icon">🎵</div>
+        <div>
+          <div>Annual Plan</div>
+          <div>$99.9/year</div>
+        </div>
+      </div>
+      <a href="#">Change</a>
+    </div>
+
+    <button class="btn-pay">Proceed to Payment</button>
+    <a href="#" class="cancel">Cancel Order</a>
+  </div>
+
+</body>
+</html>
